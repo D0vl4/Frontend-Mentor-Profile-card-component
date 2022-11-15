@@ -24,8 +24,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: ([https://your-live-site-url.com](https://pr0file-card-component.netlify.app/))
+- Solution URL: https://www.frontendmentor.io/solutions/profile-card-component-SQHP71cdFk
+- Live Site URL: https://pr0file-card-component.netlify.app
 
 ### Built with
 
