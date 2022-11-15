@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+
+/* COLORS */
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --neutral: hsl(0, 0%, 59%);
+}
+
+.background {
+    min-height: 100vh;
+    background-color: var(--dark-cyan);
+}
+
+.background::before {
+    content: "";
+    background-image: url("./images/bg-pattern-top.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -25%;
+    top: -40%;
+    z-index: 0;
+}
+
+/* I removed this circle because it was going down and to the right of the page, so the page was scrollable.
+
+.background::after {
+    content: "";
+    background-image: url("./images/bg-pattern-bottom.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -25%;
+    bottom: -40%;
+    clip-path: inset(0 25% 38% 0);
+}
+*/
+
+.white_bckgrnd {
+    position: absolute;
+    background-color: white;
+    width: 22rem;
+    height: 23.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+
+@media screen and (max-width: 375px) {
+    .white_bckgrnd {
+        width: 80%;
+    }
+}
+
+.pattern {
+    position: relative;
+    background: url(./images/bg-pattern-card.svg);
+    width: 22rem;
+    height: 8.75rem;
+    border-radius: 15px 15px 0 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 375px) {
+    .pattern {
+        width: 100%;
+    }
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue)
+}
+
+.num26 {
+    position: absolute;
+    top: 152%;
+    text-align: center;
+    left: 63%;
+    font-weight: 400;
+    color: var(--neutral);
+}
+
+h3.victor {
+    position: absolute;
+    top: 150%;
+    left: 30%;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+img {
+    position: relative;
+    width: 90px;
+    border-radius: 50px;
+    top: -78%;
+    left: 37.3%;
+}
+
+.london {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: .8rem;
+    top: -50px;
+    color: var(--neutral);
+}
+
+hr {
+    position: relative;
+    top: -1.25rem;
+    border: .3px solid rgba(0, 0, 0, .1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3.75rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.followers {
+    position: absolute;
+    margin-top: 1.56rem;
+    margin-left: -12.5rem;
+    font-size: .65rem;
+    color: var(--neutral);
+    letter-spacing: 1px;
+}
+
+.likes {
+    position: absolute;
+    margin-top: 1.56rem;
+    font-size: .65rem;
+    color: var(--neutral);
+    letter-spacing: 1px;
+}
+
+.photos {
+    position: absolute;
+    margin-top: 1.56rem;
+    margin-left: 12.65rem;
+    font-size: .65rem;
+    color: var(--neutral);
+    letter-spacing: 1px;
+}
+
+.attribution {
+    position: relative;
+    font-size: .65rem;
+    text-align: center;
+    top: -14rem;
+}
+
+.attribution a {
+    color: white;
+}
